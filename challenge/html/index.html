@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Challenge</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="../img/vector.png" alt="logo">
+    </header>
+
+    <main class="main">
+        <div class="main__div1">
+            <textarea class="main__textarea" name="" id="text" placeholder="Inserte el texto aqui" autofocus></textarea>
+            <div class="warning" id="error">
+                <p class="warning__p">
+                    <img src="../img/vector1.png" alt="">
+                    Solo letras minusculas y sin acento
+                </p>
+            </div>
+            <div class="btn">
+                <button class="btn__buttons" onclick="encriptar();">Encriptar</button>
+                <button class="btn__buttons" onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="main__div2">
+            <textarea class="result" id="resultado" disabled>
+            </textarea>
+            <button class="result__copy" id="copiar" onclick="aparecer();">Copiar</button>
+            <button class="result__clean" id="limpiar" onclick="limpiarTexto();">Limpiar</button>
+
+
+            <div class="result1"  id="imagen">
+                <div class="result__img">
+                    <img class="img" src="../img/vector2.png" alt="">
+                    <p class="result__p result__p--format">Ningun mensaje fue encontrado</p>
+                    <p class="result__p">Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+            <button class="result__copy position" id="pegar"  onclick="pegar();">Pegar texto copiado</button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="../javascript/index.js"></script>
+</body>
+
+</html>
